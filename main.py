@@ -9,17 +9,17 @@ from ellipse import find_distance_for_half_intersect
 ##############################################################
 #THIS SECTION IN CONFIGURABLE ################################
 ##############################################################
-VERTICAL_AXE_REFERENCE = 2
-HORIZONTAL_AXE_REFERENCE = 2
-VERTICAL_AXE_INTERSECT = 2
-HORIZONTAL_AXE_INTERSECT = 2
+VERTICAL_AXE_REFERENCE = 1
+HORIZONTAL_AXE_REFERENCE = 1
+VERTICAL_AXE_INTERSECT = 1
+HORIZONTAL_AXE_INTERSECT = 1
 ##############################################################
 #END OF CONFIGURABLE SECTION #################################
 ##############################################################
 
 
-elo_1 = Ellipse(VERTICAL_AXE_REFERENCE, HORIZONTAL_AXE_REFERENCE)
-elo_2 = Ellipse(VERTICAL_AXE_INTERSECT, HORIZONTAL_AXE_INTERSECT)
+elo_1 = Ellipse(HORIZONTAL_AXE_REFERENCE, VERTICAL_AXE_REFERENCE)
+elo_2 = Ellipse(HORIZONTAL_AXE_INTERSECT, VERTICAL_AXE_INTERSECT)
 
 find_distance_for_half_intersect(elo_1, elo_2)
 

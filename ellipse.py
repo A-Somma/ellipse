@@ -39,7 +39,7 @@ def find_distance_for_half_intersect(reference_ellipse, intersect_ellipse, preci
     target_area = 0.5*reference_ellipse.area
     distance = False
     lower_bound = 0
-    upper_bound = 2*max(reference_ellipse.a, intersect_ellipse.a)
+    upper_bound = 2*max(reference_ellipse.b, intersect_ellipse.b)
     assert(reference_ellipse.intersection(intersect_ellipse).area>=target_area) 
     while not distance:
         timeout+=1
