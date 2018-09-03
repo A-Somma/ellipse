@@ -3,8 +3,8 @@ import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.patches import Polygon as Poly
 from matplotlib.collections import PatchCollection
-from ellipse import Ellipse
-from ellipse import find_distance_for_half_intersect
+from src.ellipse import Ellipse
+from src.ellipse import find_distance_for_half_intersect
 
 ##############################################################
 #THIS SECTION IN CONFIGURABLE ################################
